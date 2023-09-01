@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('pull the SCM') {
             steps {
-                git 'https://github.com/learnasws16161616/maven.git'
+                git 'https://github.com/learnaws288/maven.git'
             }
         }
          stage('build') {
