@@ -2,12 +2,12 @@ pipeline {
     agent any
     
     stages {
-        stage('SCM pull') {
+        stage('pull the SCM') {
             steps {
-                git 'https://github.com/learnaws288/maven.git'
+                git 'https://github.com/learnasws16161616/maven.git'
             }
         }
-         stage('Build') {
+         stage('build') {
             steps {
                 sh "mvn clean package"
             }
